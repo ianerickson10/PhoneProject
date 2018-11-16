@@ -1,6 +1,7 @@
 package phone.controller;
 
 import javax.swing.JOptionPane;
+import phone.model.Phone;
 
 public class PhoneController
 {
@@ -9,9 +10,11 @@ public class PhoneController
 		setVariables();
 	}
 	
+	private Phone[] phoneArray;
+	
 	public void setVariables()
 	{
-		
+		phoneArray = new Phone[5];
 	}
 	
 	

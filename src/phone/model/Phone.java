@@ -1,12 +1,12 @@
 package phone.model;
 
-public class PhoneModel
+public class Phone
 {
 	private String type;
 	private double screenSize;
 	private boolean isAndroid;
 	
-	public PhoneModel()
+	public Phone()
 	{
 		
 	}

@@ -5,16 +5,29 @@ import phone.model.Phone;
 
 public class PhoneController
 {
+	private Phone[] phoneArray;
+	
 	public void start()
 	{
 		setVariables();
 	}
 	
-	private Phone[] phoneArray;
-	
 	public void setVariables()
 	{
 		phoneArray = new Phone[5];
+		
+		
+		for(int index = 0; index < phoneArray.length; index += 1)
+		{
+			if(index % 2 == 0)
+			{
+				phoneArray[index] = new Phone();
+			}
+			else
+			{
+				phoneArray[index] = new Phone(index * 30);
+			}
+		}
 	}
 	
 	

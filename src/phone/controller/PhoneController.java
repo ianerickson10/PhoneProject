@@ -23,10 +23,6 @@ public class PhoneController
 			{
 				phoneArray[index] = new Phone();
 			}
-			else
-			{
-				phoneArray[index] = new Phone(index * 30);
-			}
 		}
 	}
 	
